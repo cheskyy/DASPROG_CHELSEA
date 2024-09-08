@@ -1,0 +1,23 @@
+print("-------------------------------------------------------------")
+print("               Program Genesis and Pillars                            ")
+print("-------------------------------------------------------------")
+print()
+
+# Memberi tahu pengguna apa yang harus diinput
+print("Masukkan jarak lompatan maksimum diikuti dengan jarak antar pilar (pisahkan dengan spasi): ")
+
+# Membaca input
+inputs = input().split()  # Membaca semua input sebagai string dan memisahkan berdasarkan spasi
+n, ab, bc, cd, de = map(int, inputs)  # Mengonversi semua input menjadi integer
+
+# Memeriksa apakah semua jarak antar pilar tidak melebihi jarak lompatan maksimum
+bisa = (ab <= n and bc <= n and cd <= n and de <= n)
+
+# Menampilkan hasil
+print()
+print("-------------------------------------------------------------")
+if bisa:
+    print("HASIL = YES HE CAN")
+else:
+    print("HASIL = NO HE CAN'T")
+print("-------------------------------------------------------------")
